@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Login Form Design</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <body>
+        <div class="loginbox">
+            <img src="../images/avatar.png" class="avatar">
+            <h1>Login Here</h1>
+            <form name="loginform" valid-submit="login(logindata)">
+                <p>E-mail</p>
+
+                <input type="text" name="E-mail" placeholder="Enter E-mail" data-ng-model="logindata.E-mail">
+
+                <p>Password</p>
+
+                <input type="password" name="password" placeholder="Enter Password" data-ng-model="logindata.password">
+
+
+                <button type="submit">Login</button>
+
+                <a href="#">Don't have an account?</a><br>
+                <a href="#">Forgot password</a>
+            </form>
+
+        </div>
+        <div>
+            <ui-view></ui-view>
+        </div>
+
+    </body>
+</head>
+
+</html>

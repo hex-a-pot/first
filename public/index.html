@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex-a-pot</title>
+
+</head>
+
+<body data-ng-app="hexapot">
+    <!-- Javascript Plugin -->
+    <script type="text/javascript" src="javascript/angular.min.js"></script>
+    <script type="text/javascript" src="javascript/angular-ui-router.min.js"></script>
+
+
+    <!-- Application Plugin -->
+    <script type="text/javascript" src="app/app.js"></script>
+    <script type="text/javascript" src="app/routes/routes.js"></script>
+    <script type="text/javascript" src="app/controllers/maincontroller.js"></script>
+    <script type="text/javascript" src="app/directives/directive.js"></script>
+    <script type="text/javascript" src="app/services/mainservices.js"></script>
+
+    <div>
+        <ui-view></ui-view>
+    </div>
+
+</body>
+
+</html>
