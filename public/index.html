@@ -5,6 +5,7 @@
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hex-a-pot</title>
+    <link rel="stylesheet" type="text/css" href="./css/style_loader.css">
 
 </head>
 
@@ -12,6 +13,7 @@
     <!-- Javascript Plugin -->
     <script type="text/javascript" src="javascript/angular.min.js"></script>
     <script type="text/javascript" src="javascript/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="javascript/angular-storage.min.js"></script>
 
 
     <!-- Application Plugin -->
@@ -20,7 +22,12 @@
     <script type="text/javascript" src="app/controllers/maincontroller.js"></script>
     <script type="text/javascript" src="app/directives/directive.js"></script>
     <script type="text/javascript" src="app/services/mainservices.js"></script>
+    <script type="text/javascript" src="app/services/authService.js"></script>
 
+
+    <div id="loader" class="loader" loading>
+        <i class="fal fa-circle-notch"></i>
+    </div>
     <div>
         <ui-view></ui-view>
     </div>

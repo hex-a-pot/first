@@ -1,5 +1,5 @@
 var mongoose = require("mongoose");
-var dbase = mongoose.connect('mongodb://localhost:27017/logindb', { useNewUrlParser: true });
+var dbase = mongoose.connect('mongodb://localhost:27017/signupdb', { useNewUrlParser: true });
 
 
 mongoose.connection.on("connected", function() {

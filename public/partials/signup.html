@@ -8,18 +8,20 @@
         <div class="loginbox">
             <img src="../images/avatar.png" class="avatar">
             <h1>Signup Here</h1>
-            <form>
+            <form name="signupform" valid-submit="signup(signupdata)">
+                <p>Name</p>
+                <input type="text" name="name" placeholder="Enter your name" data-ng-model="signupdata.name">
                 <p>E-mail</p>
-                <div>
-                    <input type="text" name="E-mail" placeholder="Enter E-mail">
-                </div>
-                <p>Password</p>
-                <div>
-                    <input type="password" name="password" placeholder="Enter Password">
-                </div>
-                <div>
-                    <button type="submit">Login</button>
-                </div>
+
+                <input type="text" name="mail" placeholder="Enter E-mail" data-ng-model="signupdata.mail">
+
+                <p>Contact no.</p>
+
+                <input type="number" name="number" placeholder="Enter your contact no." data-ng-model="signupdata.cont">
+
+
+                <button type="submit">Signup</button>
+
 
             </form>
 
